@@ -1,0 +1,58 @@
+print(            '''
+                  _  /)
+                 mo / )
+                 |/)\)
+                  /\_
+                  \__|=
+                 (    )
+                 __)(__
+_________+______/      \______+__________
+  __--   |       R.I.P.       |-_-- __
+_-- -    | ___ __________ ___ |
+-_-- __  || | | | {|    /| | || __---  -_
+ --__-   || | | | {|   /|| | ||--        -
+         || | | | {|  /||| | ||__--
+ __-- -__|| | | | {| |}||| | ||--   __--
+         ||_|_|_|_{| |}|||_|_||  -__
+ --__-  -|| | | | {& |}||/ | ||---   __--
+         || | | | {| |}|/| | ||-__
+--   __--|| | | | {| |}/|| | ||__-- -__
+  --     || | | | {| &}||| | ||   __
+---   __-|| | | | {| |}||| | ||_---__-  --
+ -  -_   || | | | {| |}||| | || --
+ _- _ -_ || | | | {| |}||| | ||_--__-   _---
+_________||_|_|_|_{| |}|||_|_||______________
+                     |}|/
+                     |}/
+                     |/                      ''')
+
+print("After a long journey through infamous Duskwood, you have finally arrived at the entrance to Greymane family's mausoleum. After opening heavy gates, you find yourself looking at the set of stairs leading into the darkness. You can either go down the stairs to find the treasure you were sent to retrieve, or you can retreat. Then again, what kind of treasure hunter would you be, were you to fall back now? What will you do?\n")
+choice1 = input('Type "down" to go down the stairs, or "retreat" to fall back into the forest: \n').lower()
+if choice1 == "down":
+    choice2 = input('You bravely decide to tread into the darkness. As you walk down the stairs, a cold wind sends a shiver down your spine.\n' 'After it vanishes, the only sounds you can hear are your breath and each step you take forward. After a short while, which could also be an eternity, you reach crossroads. You can either go "left" or "right". Which way do you go?\n'
+                  'Type "left" to go left.\n'
+                  'Type "right" to go right.\n').lower()
+    if choice2 == "left":
+        choice3 = input('After a moment of hesitation, you decided to follow your nose and go left. Some time has passed, until you finally reached a huge set of doors which could only lead to the crypt of King Genn Greymane himself, a great warrior of old, who founded the country of Gilneas. Opening the doors wasn\'t a small feat, but hopefully it will be worth sore muscles. Inside, you find yourself in a large chamber, with torches somehow still burning. Either someone was here, or the torches are lit with magic. Finally, at the very end of chamber, you find a coffin of old King. The treasure you were sent to retrieve is almost within your grasp. Suddenly you hear footsteps in the corridor behind you. What do you do?\n' 
+                        'Type "open" to open the coffin. \n' 
+                        'Type "hide" to hide behind barrels. \n'
+                        'Type "confront" to face whatever is walking towards you\n').lower()
+        if choice3 == "open":
+           choice4 = print("Without a thought, you reach for the coffin and open it. Inside, suprisingly, you don't find corpses and more importantly, the treasure. Unfortunately, before you have a chance to ponder about it, you can feel a sword stabbing you in the back. You fall to the ground, never knowing who or what ended your life. Game over.\n")
+        if choice3 == "hide":
+           choice5 = input('You decided to quickly hide behind barrels. As you hear footsteps getting louder, a dark figure enters the room, wielding a runed sword. It slowly approaches the coffin, lifts the lid and lies inside it. '
+                           'You can either "run" or "open" the coffin. What do you do?\n')
+        if choice5 == "open":
+           choice9 = input("You've mustered up your courage and decided to open the coffin. Inside, you find corpses of great King, laying there, dead. You quickly realise that it's holding firmly a small amulet. The amulet, you're here to retrieve. You slowly move away it's fingers, and take the amulet. Instantly you run towards the exit and finally, you can feel the sun on your face again. You've done it, like you always do. Good job!")
+        else: print("You decided that your life is far more valuable that whatever is this about. You run as fast as you can, but as soon as you reached the stairs, you feel a strong hand grasping your arm and pulling you back into the shadow. Your screams could be heard for few moments more, until only silence remained. Game over.\n")
+        if choice3 == "confront":
+           choice6 = input('Like an adventurer you are, you decide to face whatever is walking towards you. As you reach for your sword, tall, dark figure enters the room. Measuring you with glowing eyes, it speaks with loud, booming voice. "Avada Kedavra", it says, as you feel your life quickly leaving your body. Game over.\n')
+        
+          
+    else:
+        print("After a moment of hesitation, you decided to go right. Unfortunately, you fell into a trap door with huge spikes. Now your body will serve as a warning for another foolish adventurer. Game over.")
+                      
+                       
+else:
+  print("You decide to retreat back into the forest. Hoping the the dead will stay silent about your cowardice. Game over.\n")
+  
